@@ -70,7 +70,7 @@ command parameters（命令 参数）
 
 ### 文件的组织结构介绍
 
-![640](img\CC\640.jpg)
+![640](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/640.jpg)
 
 ## 用户与权限
 
@@ -78,7 +78,7 @@ command parameters（命令 参数）
 
 `Linux` 是一个多用户的操作系统。在 `Linux` 中，理论上来说，我们可以创建无数个用户，但是这些用户是被划分到不同的群组里面的，有一个用户，名叫 `root` ，是一个很特殊的用户，它是超级用户，拥有最高权限。
 
-![微信图片_20220808171349](img\CC\微信图片_20220808171349.jpg)
+![微信图片_20220808171349](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/微信图片_20220808171349.jpg)
 
 自己创建的用户是有限权限的用户，这样大大提高了 `Linux` 系统的安全性，有效防止误操作或是病毒攻击，但是我们执行的某些命令需要更高权限时可以使用 `sudo` 命令。
 
@@ -211,7 +211,7 @@ chmod 740 file.txt
 
 权限的整体是按用户来划分的，如下图所示：
 
-![微信图片_20220808171544](img\CC\微信图片_20220808171544.jpg)
+![微信图片_20220808171544](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/微信图片_20220808171544.jpg)
 
 现在再来理解这句权限 `drwxr-xr-x` 的意思：
 
@@ -262,7 +262,7 @@ chmod u+rx file --> 文件file的所有者增加读和运行的权限chmod g+r f
 systemctl list-units --type=service
 ```
 
-![](img\CC\1.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/1.png)
 
 - 查看服务的运行状态：
 
@@ -270,7 +270,7 @@ systemctl list-units --type=service
 systemctl status firewalld
 ```
 
-![](img\CC\2.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/2.png)
 
 - 关闭服务：
 
@@ -278,7 +278,7 @@ systemctl status firewalld
 systemctl stop firewalld
 ```
 
-![](img\CC\3.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/3.png)
 
 - 启动服务：
 
@@ -286,7 +286,7 @@ systemctl stop firewalld
 systemctl start firewalld
 ```
 
-![](img\CC\4.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/4.png)
 
 - 重新启动服务（不管当前服务是启动还是关闭）：
 
@@ -306,7 +306,7 @@ systemctl reload firewalld
 systemctl disable firewalld
 ```
 
-![](img\CC\5.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/5.png)
 
 - 设置服务开机自启动：
 
@@ -314,7 +314,7 @@ systemctl disable firewalld
 systemctl enable firewalld
 ```
 
-![](img\CC\6.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/6.png)
 
 ## 文件管理
 
@@ -338,7 +338,7 @@ systemctl enable firewalld
 ls -l /    通常的ls也可以
 ```
 
-![](img\CC\7.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/7.png)
 
 #### cd
 
@@ -361,7 +361,7 @@ cd --> 不添加任何参数，也是回到家目录
 cd /usr/local
 ```
 
-![](img\CC\9.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/9.png)
 
 ### 查看路径
 
@@ -369,7 +369,7 @@ cd /usr/local
 
 获取目前所在工作目录的绝对路径：
 
-![](img\CC\8.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/8.png)
 
 #### which
 
@@ -389,7 +389,7 @@ cd /usr/local
 cat -Ab /var/log/boot.log
 ```
 
-![](img\CC\19.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/19.png)
 
 #### more
 
@@ -399,7 +399,7 @@ cat -Ab /var/log/boot.log
 more -c -10 /var/log/boot.log
 ```
 
-![](img\CC\18.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/18.png)
 
 #### touch
 
@@ -409,13 +409,13 @@ more -c -10 /var/log/boot.log
 touch text.txt
 ```
 
-![](img\CC\20.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/20.png)
 
 #### mkdir
 
 创建目录：
 
-![](img\CC\17.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/17.png)
 
 ### 文件的复制和移动
 
@@ -510,7 +510,7 @@ tar -zxvf /mydata/etc.tar.gz -C /mydata/etc
 rm text.txt  --> 删除 text.txt 文件
 ```
 
-![](img\CC\21.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/21.png)
 
 - 强制删除某个目录及其子目录：
 
@@ -579,7 +579,7 @@ date -s “2020-9-22 21：21：32”：设置当前系统时间为2020-9-22 21�
 date '+%Y-%m-%d %H:%M:%S'
 ```
 
-![](img\CC\10.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/10.png)
 
 ## 系统管理
 
@@ -603,7 +603,7 @@ who -r
 who -buT
 ```
 
-![](img\CC\12.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/12.png)
 
 ### free
 
@@ -613,7 +613,7 @@ who -buT
 free -m
 ```
 
-![](img\CC\13.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/13.png)
 
 ### 帮助命令
 
@@ -665,13 +665,13 @@ ps -ef
 ps -ef | grep sshd
 ```
 
-![](img\CC\14.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/14.png)
 
 #### top
 
 查看即时活跃的进程，类似Windows的任务管理器。
 
-![](img\CC\15.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/15.png)
 
 #### kill
 
@@ -711,7 +711,7 @@ history | grep xx
 df -hT
 ```
 
-![](img\CC\22.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/22.png)
 
 ### dh
 
@@ -721,13 +721,13 @@ df -hT
 du -h --max-depth=1 ./*
 ```
 
-![](img\CC\23.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/23.png)
 
 ### ifconfig
 
 显示当前网络接口状态：
 
-![](img\CC\24.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/24.png)
 
 ### netstat
 
@@ -737,7 +737,7 @@ du -h --max-depth=1 ./*
 netstat -rn
 ```
 
-![](img\CC\25.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/25.png)
 
 - 查看所有有效TCP连接：
 
@@ -751,7 +751,7 @@ netstat -an
 netstat -tulnp
 ```
 
-![](img\CC\26.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/26.png)
 
 - 查看处于连接状态的系统资源信息：
 
@@ -763,7 +763,7 @@ netstat -atunp
 
 从网络上下载文件
 
-![](img\CC\27.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/CC/27.png)
 
 ## 文件上传下载
 
@@ -1103,7 +1103,7 @@ mysql_secure_installation
 
 然后根据提示输入root的密码
 
-![](img/mlimg/sr.png)
+![](https://gitee.com/hyy_xiaoluo/mymd/raw/master/Linux%E5%AD%A6%E4%B9%A0/img/mlimg/sr.png)
 
 ### 3.6、链接数据库
 
